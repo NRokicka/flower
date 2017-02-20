@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/image3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* высота веб-страницы больше или равна высоте окна браузера */
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.875em;
+    line-height: 1.6em;
+    
+}
+
+header h1 {
+    font-size: 10rem;
+    color: white;
+    font-family: 'Marck Script', cursive;
+}
+
+main {
+    flex: 1;
+    /* если содержимое body меньше высоты окна, то main будет растянут до нужной величины */
+   
+}
+nav ul { 
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px; 
+}
