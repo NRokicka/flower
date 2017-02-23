@@ -5,38 +5,34 @@
 body {
     background-image: url("../img/image3.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+    background-position: center center;
+    max-width: 1200px;
     min-height: 100vh;
-    /* высота веб-страницы больше или равна высоте окна браузера */
-    margin: 0;
+    margin: 0 auto;
     font-family: sans-serif;
     font-size: 0.875em;
     line-height: 1.6em;
-     
-    
+    color: #222;
+   
 }
-
-header h1 {
+header {
+   display: flex;
+}
+h1 {
     font-size: 7rem;
     color: white;
     font-family: 'Marck Script', cursive;
-    border: 1 solid red;
 }
 
 main {
-    
-   flex: 1 0 auto;
-    /* если содержимое body меньше высоты окна, то main будет растянут до нужной величины */
+    min-height: 100vh;
     border: 1px solid red;
 }
 a {
     color: white;
     text-decoration: none;
     background: rgba(34, 34, 34, 0.8);
-    padding: 20px 5px;
+    padding: 20px 0;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -47,9 +43,10 @@ a:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 .wrapper {
-     max-width: 1000px;
+     max-width: 1200px;
      margin: 0 auto;
      padding: 50px;
+      border: 1 solid red;
 }
 
 .flex_nav ul { 
@@ -63,7 +60,5 @@ a:hover {
 }
 
 footer{
-   /*Футер будет занимать столько места по вертикали, сколько и должен и не пикселя больше */
-   flex: 0 0 auto;
-   border: 1px solid red;
+  border: 1px solid red;
 }
