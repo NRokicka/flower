@@ -13,22 +13,24 @@ body {
     font-size: 0.875em;
     line-height: 1.6em;
     color: #222;
-   
+    display: flex;
+    flex-direction: column;
 }
-header {
-   display: flex;
-}
+
 h1 {
     font-size: 7rem;
     color: white;
     font-family: 'Marck Script', cursive;
+    margin: 1.3em;
 }
 
 main {
-    min-height: 100vh;
+    flex: 1 1 auto;
+    min-height: 20vh;
     border: 1px solid red;
 }
-a {
+
+nav a {
     color: white;
     text-decoration: none;
     background: rgba(34, 34, 34, 0.8);
@@ -37,28 +39,81 @@ a {
     width: 100%;
     text-align: center;
     transition: all 0.5s;
-    
-}
-a:hover {
-    background: rgba(0, 0, 0, 0.3);
-}
-.wrapper {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 50px;
-      border: 1 solid red;
 }
 
-.flex_nav ul { 
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1 solid red;
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-.flex_nav li { 
+
+nav li {
     flex: 1;
 }
 
-footer{
-  border: 1px solid red;
+aside {
+    min-height: 20vh;
+    border: 1px solid green;
+}
+
+footer {
+    border: 1px solid red;
+}
+
+.social_nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social_nav a {
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+@media all and (max-width: 980px) {
+    h1 {
+        font-size: 4rem;
+        margin: 0.6em;
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+    nav li {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (max-width: 470px) {
+    h1 {
+        font-size: 2rem;
+        margin: 0.6em;
+    }
+    body {
+        display: flex;
+    }
+    main {
+        flex: 1;
+    }
+    nav {
+      order: 2;
+    }
+    aside {
+        order: 1;
+    }
 }
