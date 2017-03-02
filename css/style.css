@@ -3,9 +3,7 @@
 }
 
 body {
-    background-image: url("../img/image3.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    
     max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
@@ -18,16 +16,19 @@ body {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     color: white;
     font-family: 'Marck Script', cursive;
     margin: 1.3em;
 }
-
+ 
 main {
+    background-image: url("../img/image3.jpg") ;
+    background-size: cover;
+  background-attachment: fixed;
     flex: 1 1 auto;
     min-height: 20vh;
-    border: 1px solid red;
+    
 }
 
 nav a {
@@ -47,8 +48,7 @@ nav a:hover {
 
 nav {
     max-width: 1200px;
-    margin: 0 auto;
-    border: 1 solid red;
+    
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav li {
 
 aside {
     min-height: 20vh;
-    border: 1px solid green;
+    
 }
 
 footer {
@@ -86,29 +86,22 @@ footer {
     padding: 10px 20px;
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 768px) {
     h1 {
-        font-size: 4rem;
-        margin: 0.6em;
+    font-size: 3rem
     }
-    nav ul {
-        flex-wrap: wrap;
-    }
-    nav li {
-        flex-basis: 100%;
-    }
+    
 }
 
 @media all and (max-width: 470px) {
     h1 {
         font-size: 2rem;
-        margin: 0.6em;
     }
-    body {
-        display: flex;
-    }
+    
     main {
-        flex: 1;
+        display: flex;
+        flex-direction: column;
+        
     }
     nav {
       order: 2;
@@ -116,4 +109,17 @@ footer {
     aside {
         order: 1;
     }
+    nav ul {
+        flex-wrap: wrap;
+    }
+    nav li {
+        flex-basis: 100%;
+        
+    }
+    nav a {
+    
+    padding: 10px 0;
+    
+}
+   
 }
