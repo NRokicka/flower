@@ -6,7 +6,6 @@ body {
     background-image: url("../img/image3.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    
     max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
@@ -16,26 +15,49 @@ body {
     color: #222;
     display: flex;
     flex-direction: column;
-    
+}
+
+header {
+    margin: 3em;
 }
 
 h1 {
     font-size: 5rem;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-    font-family: 'Marck Script', cursive;
-    margin: 1.3em;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 10px;
 }
- 
+
 main {
     flex: 1 1 auto;
-    min-height: 20vh;
-    
+    min-height: 5vh;
+    margin-top: 5em;
+}
+#title {
+color: #222;
+text-align: center;
+margin-bottom: 5em;
+font-size: 1.5rem;
+font-family: 'Marck Script', cursive;
+
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+     text-transform: uppercase;
+   font-family: 'Cormorant Garamond', serif;
+    margin-top: 1.3em;
+    margin-bottom: 0.4em;
+    text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
     background: rgba(34, 34, 34, 0.8);
     padding: 20px 0;
     display: inline-block;
@@ -43,12 +65,13 @@ nav a {
     text-align: center;
     transition: all 0.5s;
 }
+
 #nav_rose {
     padding: 0;
 }
+
 nav img {
     width: 56px;
-    
 }
 
 nav a:hover {
@@ -57,7 +80,6 @@ nav a:hover {
 
 nav {
     max-width: 1200px;
-    
 }
 
 nav ul {
@@ -71,14 +93,11 @@ nav li {
     flex: 1;
 }
 
-aside {
-    min-height: 20vh;
-}
-
 footer {
     display: flex;
     align-items: flex-end;
 }
+
 footer p {
     flex: 1;
     padding: 10px;
@@ -88,69 +107,54 @@ footer p {
     list-style: none;
     flex: 2;
 }
+
 .social_nav a {
-    color: rgba(0, 0, 0, 0.3);
-}
-.social_nav a:hover {
     color: rgba(34, 34, 34, 0.8);
+}
+
+.social_nav a:hover {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 @media all and (max-width: 768px) {
     h1 {
-    font-size: 3rem
+        font-size: 3rem
     }
     main {
         display: flex;
         flex-direction: column;
-        
     }
-    nav {
-      order: 2;
+    #title {
+        font-size: 1rem;
     }
-    aside {
-        order: 1;
-    }
-    
 }
 
 @media all and (max-width: 470px) {
     h1 {
         font-size: 2rem;
     }
-    
     main {
         display: flex;
         flex-direction: column;
-        
-    }
-    nav {
-      order: 2;
-    }
-    aside {
-        order: 1;
     }
     nav ul {
         flex-wrap: wrap;
     }
     nav li {
         flex-basis: 100%;
-        
     }
     nav a {
-    padding: 10px 0;
-    
-}
-footer {
-    display: flex;
-    flex-direction: column;
-}
-footer p {
-    order: 2;
-}
-
-.social_nav ul {
-    order: 1;
-    display: flex;
-}
-   
+        padding: 10px 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer p {
+        order: 2;
+    }
+    .social_nav ul {
+        order: 1;
+        display: flex;
+    }
 }
