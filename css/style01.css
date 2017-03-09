@@ -96,9 +96,11 @@ aside {
     background: rgba(255, 255, 255, 0.7);
     
 }
-aside img {
-    width: 30%;
+img {
+    border-style: solid;
+    border-width: 10px 1px 5px 20px;
 }
+
 section {
 background: rgba(255, 255, 255, 0.7);
 }
