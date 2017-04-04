@@ -46,9 +46,7 @@ nav a {
     text-align: center;
     transition: all 0.5s;
 }
-#nav_rose {
-    padding: 0;
-}
+
 nav img {
     width: 56px;
 }
